@@ -1,0 +1,73 @@
+html {
+  font-size: clamp(1rem, calc(0.7rem + 1vw), 1.625rem);
+}
+
+header {
+  text-align: center;
+  font-size: 1rem;
+}
+header li {
+  margin: 3vw;
+}
+header a.normal {
+  color: #fbbc05;
+}
+header a.amarelo {
+  background-color: #fbbc05;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 0.8vw 2vw;
+}
+.banner {
+  background: url(../images/background-banner.png) no-repeat;
+  background-size: 100% auto;
+  padding: 3vw 5vw;
+  margin: 2vw 0;
+}
+.banner div.img {
+  display: none;
+}
+.banner h1 {
+  font-size: 1.8rem;
+}
+.banner p {
+  color: rgb(95, 95, 95);
+  font-size: 0.9rem;
+  margin-top: 14px;
+}
+.banner a {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 25px 5px 5px;
+}
+.banner p.button {
+  display: flex;
+  gap: 10px;
+}
+.banner p.button img {
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+  header ul {
+    display: flex;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner div.img {
+    display: block;
+    display: flex;
+    width: 70%;
+    text-align: right;
+  }
+  .banner{
+
+    display: flex;
+    text-align: center;
+  }
+}
