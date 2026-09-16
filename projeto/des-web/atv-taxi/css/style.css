@@ -51,6 +51,38 @@ header a.amarelo {
   display: flex;
 }
 
+section.ready div.imgs {
+  display: none;
+}
+section.ready {
+  text-align: center;
+  padding: 3px 5px 3px 5px;
+}
+section.ready h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 13px 0 13px 0;
+}
+section.ready div.lista ul li {
+  margin: 24px 0 24px 0;
+}
+section.ready div.lista ul li h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.dow{
+    background-color: rgb(255, 196, 0);
+    border-radius: 20px;
+    margin: 3vw 5vw 3vw 5vw;
+    color: white;
+    padding: 10px ;
+}
+section.dow h2 {
+  font-size: 1.7rem; 
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
+
 @media only screen and (min-width: 600px) {
   header ul {
     display: flex;
@@ -65,10 +97,34 @@ header a.amarelo {
     width: 70%;
     text-align: right;
   }
-  .banner{
-
+  .banner {
     display: flex;
     text-align: center;
-       text-align: center;
+    text-align: center;
+  }
+  section.ready div.imgs {
+    display: block;
+  }
+  section.ready div {
+    display: flex;
+  }
+  section.ready > p {
+    padding: 10px 27vw 3vw 27vw;
+  }
+  section.ready > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  section.ready div.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 40vw;
+  }
+  section.ready div.lista ul li { 
+    width: 40%;
+    margin: 20px 0 20px 0;
   }
 }
+  
