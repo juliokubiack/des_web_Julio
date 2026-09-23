@@ -5,26 +5,26 @@ html {
 header {
   text-align: center;
   font-size: 1rem;
+  padding: 0 100px 0 100px;
 }
 header li {
   margin: 3vw;
 }
-header a.normal {
+header li.font-yellow {
   color: #fbbc05;
 }
-header a.amarelo {
+header li.button-yellow {
   background-color: #fbbc05;
   border-radius: 0.4rem;
   color: white;
-  padding: 0.8vw 2vw;
+  padding: 0.8vw 0.8vw;
 }
 .banner {
   background: url(../images/background-banner.png) no-repeat;
   background-size: 100% auto;
   padding: 3vw 5vw;
-  margin: 2vw 0;
 }
-.banner div.img {
+.banner span.imge {
   display: none;
 }
 .banner h1 {
@@ -70,19 +70,49 @@ section.ready div.lista ul li h3 {
   font-size: 1.3rem;
   font-weight: 800;
 }
-.dow{
-    background-color: rgb(255, 196, 0);
-    border-radius: 20px;
-    margin: 3vw 5vw 3vw 5vw;
-    color: white;
-    padding: 10px ;
+
+.dow {
+  background-color: rgb(255, 196, 0);
+  border-radius: 20px;
+  margin: 3vw 5vw 3vw 5vw;
+  color: white;
+  padding: 10px;
 }
 section.dow h2 {
-  font-size: 1.7rem; 
+  font-size: 1.7rem;
   font-weight: 700;
-  padding: 0 0 20px 0;
+  padding: 0 0 15px 0;
+  text-align: left;
 }
+section.dow p {
+  margin: 1vw 0 5vw 0;
+  text-align: left;
+}
+section.dow button {
+  background-color: #252b42;
+  padding: 2vw;
+  border-radius: 1.4vw;
+}
+section.dow {
+  text-align: center;
+}
+section.services{
+    padding: 3vw 5vw;
+}
+section.services  h2{
+  font-size: 1.1rem;
+}
+section.services div.text{
+  margin: 0 0 20px 0;
+}
+section.services ul li{
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 10px 0 10px 0;
+}
+section.services ul li h3 {
 
+}
 @media only screen and (min-width: 600px) {
   header ul {
     display: flex;
@@ -91,7 +121,7 @@ section.dow h2 {
     display: flex;
     justify-content: space-between;
   }
-  .banner div.img {
+  .banner div.imge {
     display: block;
     display: flex;
     width: 70%;
@@ -102,9 +132,11 @@ section.dow h2 {
     text-align: center;
     text-align: center;
   }
-  section.ready div.imgs {
-    display: block;
-  }
+  .banner span.imge {
+  display: block;
+}
+
+  
   section.ready div {
     display: flex;
   }
@@ -122,9 +154,53 @@ section.dow h2 {
     gap: 40px;
     width: 40vw;
   }
-  section.ready div.lista ul li { 
+  section.ready div.lista ul li {
     width: 40%;
     margin: 20px 0 20px 0;
   }
+  section.dow {
+    padding: 3vw;
+    background:
+      url(../images/iphone-pet-ui.png) no-repeat,
+      url(../images/iphone-pet-ui.png) no-repeat,
+      linear-gradient(#fbbc05);
+
+    background-size:
+      auto 110%,
+      auto 100%;
+    background-position:
+      center -130%,
+      90% -5.5vw;
+  }
+
+  section.dow h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+  }
+  section.dow p {
+    margin: 0 0 1.5vw 0;
+    padding: 5px 50vw 0 0;
+  }
+  section.dow button {
+    background-color: #252b42;
+    padding: 1vw;
+    border-radius: 0.8vw;
+
+  }
+  section.dow {
+  text-align: left;
 }
-  
+section.services{
+  display: flex;
+
+}
+section.services div.text{
+  width: 30%;
+}
+section.services ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+}
