@@ -202,5 +202,9 @@ section.services ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+}
+section.services li:hover{
+  background-color: #fbbc05;
 }
 }
